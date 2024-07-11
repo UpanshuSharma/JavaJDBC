@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06588132-ff9d-415a-afbf-6e43c63f7c15" name="Changes" comment="Fetching all the data using JDBC">
+    <list default="true" id="06588132-ff9d-415a-afbf-6e43c63f7c15" name="Changes" comment="crud in jdbc using statement interface">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/JdbcClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JdbcClass.java" afterDir="false" />
     </list>
@@ -85,7 +85,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720680394772</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="crud in jdbc using statement interface">
+      <option name="closed" value="true" />
+      <created>1720681567483</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1720681567483</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +109,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fetching all the data using JDBC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fetching all the data using JDBC" />
+    <MESSAGE value="crud in jdbc using statement interface" />
+    <option name="LAST_COMMIT_MESSAGE" value="crud in jdbc using statement interface" />
   </component>
 </project>
