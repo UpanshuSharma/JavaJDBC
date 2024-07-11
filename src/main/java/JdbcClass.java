@@ -15,16 +15,28 @@ public class JdbcClass {
         String url="jdbc:postgresql://localhost:5432/Telusko-Learning";
         String username="postgres";
         String password="Upanshu1#";
-        String query="SELECT * from Student";
+        String fetchquery="SELECT * from Student";
+        String insertquery="insert into student (student_name, student_marks) values('vinay goel', 95) , ('shubham sharma', 90)";
+        String updatequery="delete from student where student_id=6";
         try {
             Class.forName("org.postgresql.Driver");
             Connection connection= DriverManager.getConnection(url, username, password);
             System.out.println("Connection: Establish: ");
             Statement statement=connection.createStatement();
-            ResultSet resultSet=statement.executeQuery(query);
+            //  Fettching data
+            ResultSet resultSet=statement.executeQuery(fetchquery);
             while (resultSet.next()){
                 System.out.println("Student Id-  "+resultSet.getString("student_id") + "  Student Name-  "+resultSet.getString("student_name")+"  Student Mark- "+resultSet.getString("student_marks") );
             }
+
+            // insert the data
+//           boolean isInsert=statement.execute(insertquery);
+//            if(isInsert) System.out.println("Data inserted successfull");
+//            else System.out.println("Data not inserted");
+
+//             boolean isUpdated=statement.execute(updatequery);
+//            if(isUpdated) System.out.println("Data Updated successfull");
+//            else System.out.println("Data not updated");
             System.out.println("closing connection");
             connection.close();
         } catch (ClassNotFoundException e) {
